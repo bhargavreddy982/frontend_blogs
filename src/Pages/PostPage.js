@@ -37,7 +37,7 @@ const PostPage = () => {
         <img src={`https://blogs-deploy.onrender.com/${postInfo.cover}`}/>
         {userInfo.id===postInfo.author._id && (
         <div className='edit-row'>
-          <Link className='edit-button' to={`/edit/${postInfo._id}`}>
+          <Link className='edit-button' to={`https://blogs-deploy.onrender.com/edit/${postInfo._id}`}>
             Edit this post</Link>
         </div>
        )}
