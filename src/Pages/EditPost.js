@@ -14,7 +14,7 @@ export const EditPost = () => {
   const [redirect,setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch('https://backend-services-l8dt.onrender.com/'+id)
+    fetch('https://backend-services-l8dt.onrender.com/post'+id)
       .then(response => {
         response.json().then(postInfo => {
           setTitle(postInfo.title);
