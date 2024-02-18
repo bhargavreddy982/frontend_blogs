@@ -10,7 +10,7 @@ const Header = () => {
 
 
   useEffect(()=>{
-    fetch('https://service-k24e.onrender.com/profile',{
+    fetch('https://backend-services-l8dt.onrender.com/profile',{
       credentials:'include',
     }).then(response=>{
       response.json().then(userInfo=>{
