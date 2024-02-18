@@ -12,7 +12,7 @@ const PostPage = () => {
     const {id}= useParams();
     useEffect(()=>{
      
-        fetch(`https://service-k24e.onrender.com/post/${id}`).then(response=>{
+        fetch(`https://backend-services-l8dt.onrender.com/post/${id}`).then(response=>{
             response.json().then (postInfo=>{
                 setPostInfo(postInfo);
 
@@ -34,7 +34,7 @@ const PostPage = () => {
 
         </div>
        
-        <img src={`https://service-k24e.onrender.com/${postInfo.cover}`}/>
+        <img src={`https://backend-services-l8dt.onrender.com/${postInfo.cover}`}/>
         {userInfo.id===postInfo.author._id && (
         <div className='edit-row'>
           <Link className='edit-button' to={`/edit/${postInfo._id}`}>

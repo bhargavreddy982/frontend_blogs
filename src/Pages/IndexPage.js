@@ -6,7 +6,7 @@ const IndexPage = () => {
   const [posts,setPosts]=useState([]);
   //when we mount our component
   useEffect(()=>{
-    fetch('https://service-k24e.onrender.com/post').then(response=>{
+    fetch('https://backend-services-l8dt.onrender.com/post').then(response=>{
 response.json().then(posts=>{
   setPosts(posts);
 });

@@ -16,7 +16,7 @@ const RegisterPage = () => {
     ev.preventDefault();
 
     
-     const response=await fetch('https://service-k24e.onrender.com/register',{
+     const response=await fetch('https://backend-services-l8dt.onrender.com/register',{
       method:'POST',
       body:JSON.stringify({username,password}),
       headers:{"Content-Type":"application/json"},
