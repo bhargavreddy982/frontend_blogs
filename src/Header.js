@@ -24,7 +24,7 @@ const Header = () => {
 function logout(){
   //invalidate cookie to logout
   
-  fetch('https://service-k24e.onrender.com/logout',{
+  fetch('https://backend-services-l8dt.onrender.com/logout',{
     credentials:'include',
     method:'POST'
   });
