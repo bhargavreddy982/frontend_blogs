@@ -14,7 +14,7 @@ const{setUserInfo}=useContext(UserContext);
 
  async function  login(ev){
     ev.preventDefault();
-  const response= await fetch('https://blogs-deploy.onrender.com/login',{
+  const response= await fetch('https://service-k24e.onrender.com/login',{
       method:'POST',
       body:JSON.stringify({username,password}),
       headers:{'Content-Type':'application/json'},

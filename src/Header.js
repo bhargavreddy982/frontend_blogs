@@ -10,7 +10,7 @@ const Header = () => {
 
 
   useEffect(()=>{
-    fetch('https://blogs-deploy.onrender.com/profile',{
+    fetch('https://service-k24e.onrender.com/profile',{
       credentials:'include',
     }).then(response=>{
       response.json().then(userInfo=>{
@@ -24,7 +24,7 @@ const Header = () => {
 function logout(){
   //invalidate cookie to logout
   
-  fetch('https://blogs-deploy.onrender.com/logout',{
+  fetch('https://service-k24e.onrender.com/logout',{
     credentials:'include',
     method:'POST'
   });

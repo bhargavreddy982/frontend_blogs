@@ -14,7 +14,7 @@ export const EditPost = () => {
   const [redirect,setRedirect] = useState(false);
 
   useEffect(() => {
-    fetch('https://blogs-deploy.onrender.com/post/'+id)
+    fetch('https://service-k24e.onrender.com/post/'+id)
       .then(response => {
         response.json().then(postInfo => {
           setTitle(postInfo.title);
@@ -35,7 +35,7 @@ export const EditPost = () => {
       data.set('file', files?.[0]);
     }
     console.log('Before fetch');
-    const response = await fetch('https://blogs-deploy.onrender.com/post', {
+    const response = await fetch('https://service-k24e.onrender.com/post', {
       method: 'PUT',
       body: data,
       credentials: 'include',
