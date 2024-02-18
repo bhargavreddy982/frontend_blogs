@@ -41,7 +41,7 @@ setRedirect(true)
     }
 
     if(redirect){
-      return <Navigate to={'https://backend-services-l8dt.onrender.com'}/>
+      return <Navigate to={'/'}/>
     }
     
    
